@@ -1,24 +1,23 @@
 #include <stdio.h>
-#include "main.h"
 #include <stdlib.h>
+#include "main.h"
 
 /**
   * main - multiplies two numbers
   * @argc: number of arguments
   * @argv: arguments vector
   *
-  * Return: Always 0
+  * Return: 0 succes, non zero fail
   */
 int main(int argc, char *argv[])
 {
-	int num1 = atoi(argv[1]);
-	int num2 = atoi(argv[2]);
+	int n1 = 0, n2 = 0;
 
 	if (argc == 3)
 	{
-		int result = num1 * num2;
-
-		printf("%d\n", result);
+		n1 = atoi(argv[1]);
+		n2 = atoi(argv[2]);
+		printf("%d\n", n1 * n2);
 	}
 	else
 	{
