@@ -6,7 +6,7 @@
   * @argc: number of arguments
   * @argv: arguments vector
   *
-  * Return: Always 0, 1 if not a digit
+  * Return: Always 0
   */
 
 int main(int argc, char *argv[])
@@ -28,6 +28,13 @@ int main(int argc, char *argv[])
 		sum += num;
 		}
 	}
-	printf("%d\n", sum);
+	if (argc == 1)
+	{
+		printf("0\n");
+	}
+	else
+	{
+		printf("%d\n", sum);
+	}
 	return (0);
 }
