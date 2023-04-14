@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-  * array range - creates an array of integers
+  * *array_range - creates an array of integers
   * @min: min value
   * @max: max value
   *
@@ -10,8 +10,8 @@
   */
 int *array_range(int min, int max)
 {
-	int i, size;
 	int *arr;
+	int i, size;
 
 	if (min > max)
 		return (NULL);
